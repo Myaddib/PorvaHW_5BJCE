@@ -15,11 +15,11 @@ public class Main {
 
         System.out.println("Register please  ");
         while (true) {
-            System.out.println("Write login   : ");
+            System.out.println("Register: Write login   : ");
             login = scanner.nextLine();
-            System.out.println("Write password: ");
+            System.out.println("Register: Write password: ");
             password = scanner.nextLine();
-            System.out.println("Write return password: ");
+            System.out.println("Register: Write return password: ");
             confirmPassword = scanner.nextLine();
 
             if (writeLoginUser.signUp(login, password, confirmPassword)) {
@@ -30,9 +30,9 @@ public class Main {
 
         System.out.println("Log in please");
         while (true) {
-            System.out.println("Write login: ");
+            System.out.println("Log in: Write login: ");
             login = scanner.nextLine();
-            System.out.println("Write password: ");
+            System.out.println("Log in: Write password: ");
             password = scanner.nextLine();
 
             if (writeLoginUser.signIn(login, password)) {
