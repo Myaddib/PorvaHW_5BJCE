@@ -55,7 +55,7 @@ public class WriteLogin {
         throw new WrongPasswordException();
     }
 
-     public boolean signUp(String login, String password, String confirmPassword) {//перевірка на співпадіння пароля та підтверження
+    public boolean signUp(String login, String password, String confirmPassword) {//перевірка на співпадіння пароля та підтверження
         try {
             if (isStringMatch(password, confirmPassword)) {
                 this.setLogin(login);
